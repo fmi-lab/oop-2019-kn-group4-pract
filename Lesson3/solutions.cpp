@@ -5,9 +5,7 @@ int * erase(int * arr, size_t size, size_t leftIndex, size_t rightIndex)
 	assert(rightIndex < size);
 	assert(rightIndex - leftIndex + 1 < size); // array will have at least 1 element
 
-	size_t spaceNeeded = size - (rightIndex - leftIndex + 1);
-
-	int * ans = new int[spaceNeeded];
+	int * ans = new int[size - (rightIndex - leftIndex + 1)];
 
 	for (size_t i = 0; i < leftIndex; i++)
 	{
