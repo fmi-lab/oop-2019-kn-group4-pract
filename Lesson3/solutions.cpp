@@ -1,3 +1,14 @@
+int * read(size_t n)
+{
+	int * arr = new int[n];
+
+	for (size_t i = 0; i < n; i++)
+	{
+		cin >> arr[i];
+	}
+	return arr;
+}
+
 int * erase(int * arr, size_t size, size_t leftIndex, size_t rightIndex)
 {
 	assert(leftIndex <= rightIndex);
