@@ -64,6 +64,18 @@ int * erase(int * arr, size_t size, size_t index)
 	return erase(arr, size, index, index);
 }
 
+void extend(int *& arr, size_t size, size_t newSize)
+{
+	assert(arr != nullptr);
+	assert(size < newSize);
+
+	resize(arr, size, newSize);
+	for (size_t i = size; i < newSize; i++)
+	{
+		arr[i] = 0;
+	}
+}
+
 void testErase()
 {
 	size_t sizeOfArray = 10;
