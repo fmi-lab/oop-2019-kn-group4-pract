@@ -11,8 +11,11 @@ int * read(size_t n)
 
 void resize(int *& arr, size_t size, size_t newSize)
 {
-	int * newArr = new int[newSize];
+	assert(newSize > size);
+	assert(arr != nullptr);
 
+	int * newArr = new int[newSize];
+	
 	for (size_t i = 0; i < size; i++)
 	{
 		newArr[i] = arr[i];
