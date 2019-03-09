@@ -25,8 +25,20 @@ void resize(int *& arr, size_t size, size_t newSize)
 	arr = newArr;
 }
 
+void addElements(int *& arr, size_t size, size_t brNewElements)
+{
+	assert(arr != nullptr);
+
+	resize(arr, size, size + brNewElements);
+	for (size_t i = size; i < size + brNewElements; i++)
+	{
+		cin >> arr[i];
+	}
+}
+
 int * erase(int * arr, size_t size, size_t leftIndex, size_t rightIndex)
 {
+	assert(arr != nullptr);
 	assert(leftIndex <= rightIndex);
 	assert(leftIndex < size);
 	assert(rightIndex < size);
