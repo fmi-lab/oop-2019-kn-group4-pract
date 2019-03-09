@@ -9,6 +9,19 @@ int * read(size_t n)
 	return arr;
 }
 
+void resize(int *& arr, size_t size, size_t newSize)
+{
+	int * newArr = new int[newSize];
+
+	for (size_t i = 0; i < size; i++)
+	{
+		newArr[i] = arr[i];
+	}
+
+	delete[] arr;
+	arr = newArr;
+}
+
 int * erase(int * arr, size_t size, size_t leftIndex, size_t rightIndex)
 {
 	assert(leftIndex <= rightIndex);
