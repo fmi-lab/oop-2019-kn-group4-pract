@@ -12,9 +12,9 @@
 * soundTheAlarms() - пуска всички аларми на всички устройства
 * cost(numberOfDays) - извежда разходите за уредите в стаята за определен брой дни.
 
+## ЗЗС - Наследяване и полиморфизъм
 
-
-
+https://github.com/stranxter/lecture-notes/blob/master/homeworks/02_oop/09%20basic%20inheritance%20and%20virtual%20functions/basic%20inheritance.pdf
 
 
 
