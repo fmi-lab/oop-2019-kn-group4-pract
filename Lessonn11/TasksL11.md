@@ -16,5 +16,11 @@
 
 https://github.com/stranxter/lecture-notes/blob/master/homeworks/02_oop/09%20basic%20inheritance%20and%20virtual%20functions/basic%20inheritance.pdf
 
+## Matrix
 
+Направете шаблонен клас Matrix, който да имплементира матрица. Размерът й трябва да се задава при конструиране на матрицата. Да поддържа следните функции:
+
+* change(<подходящ тип> newValue, size_t row, size_t col) - задава нова стойност на елемента реда и колоната.
+* fillPrimaryDiag(<подходящ тип> newValue) - запълва първичния диагонал със newValue
+* has(<подходящ тип> value, rowFrom, rowTo, colFrom, colTo) - проверява дали value е в подматрицата
 
